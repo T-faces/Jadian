@@ -1,37 +1,90 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Aria-satria/Jadian/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Aria-satria/Jadian/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+    <body>
+
+        <h1>Hai cantikkkk</h1>
+
+        <img src="https://media1.giphy.com/media/a9QBC2aru310k/giphy.gif?cid=790b7611533f054e8ed4a6db457afc4597adb3b40abf1d8b&rid=giphy.gif&ct=g">
+
+        <h1>
+
+            Mau ga jadi pacarku?
+
+            <button id='btn_music' onclick='music()'>Play/Pause</button>
+
+        </h1>
+
+        <button id='btn_mau' onclick='alert("I <3 U")'>Mau</button>&nbsp;
+
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+
+        <audio id='bgMusic' src='https://media1.vocaroo.com/mp3/1jNUxZxuOGiR' loop></audio>
+
+    </body>
+
+    <script>
+
+        function gamau(id){
+
+            var mau = document.getElementById('btn_mau');
+
+            var i = Math.floor(Math.random()*300)+1;
+
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+
+            id.style.left = i+'px';
+
+            id.style.top = j+'px';
+
+        }
+
+        var audioPlaying = false;
+
+        function music(){
+
+            var audio = document.getElementById("bgMusic");
+
+            if (!audioPlaying) audio.play();
+
+            else audio.pause();
+
+            audioPlaying = !audioPlaying;
+
+        }
+
+    </script>
+
+</html
